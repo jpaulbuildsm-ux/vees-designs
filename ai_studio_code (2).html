@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — VEES DESIGN | Let's Create Something Meaningful</title>
+  <meta name="description" content="Request a design quote from Vivi. Inquire about brand identity, posters, social media design, and custom graphic services.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%23C5A15B' font-family='serif'>V</text></svg>">
+</head>
+<body>
+
+  <!-- Global Header -->
+  <header class="site-header" role="banner">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand-logo" aria-label="VEES DESIGN">
+        VEES DESIGN<span>.</span>
+      </a>
+
+      <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav role="navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="section-label">Direct Communication</span>
+        <h1 class="page-title">Let’s Create Something <span class="gold-accent">Meaningful.</span></h1>
+        <p class="page-subtitle">
+          Submit your project requirements below. Vivi reviews every brief personally and will be in touch with a customized quote and timeline breakdown.
+        </p>
+      </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="section">
+      <div class="container">
+        <div class="grid-2" style="gap: 5rem;">
+          
+          <!-- Contact Details / WhatsApp Direct Info -->
+          <div>
+            <span class="section-label">Direct Line</span>
+            <h2 style="font-size: clamp(2rem, 3.2vw, 2.6rem); margin-bottom: 1.5rem;">Have questions before submitting your brief?</h2>
+            <p>
+              We welcome preliminary inquiries from individuals, event curators, and enterprise founders looking to discuss visual alignment.
+            </p>
+
+            <div style="margin: 2.5rem 0; padding: 2rem; background-color: var(--color-charcoal); border: 1px solid var(--color-border); border-radius: var(--radius-sm);">
+              <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                <span class="gold-accent">&bull;</span> WhatsApp Studio Chat
+              </h3>
+              <p style="font-size: 0.95rem; margin-bottom: 1.25rem;">
+                Prefer instant messaging? Connect on WhatsApp with a prefilled introduction message.
+              </p>
+              <a href="#" id="contact-page-whatsapp-btn" class="btn btn-primary btn-sm" style="background-color: #25d366; border-color: #25d366; color: #fff;">
+                Open WhatsApp Conversation
+              </a>
+              <div style="margin-top: 0.75rem; font-size: 0.75rem; color: #888;">
+                * Direct WhatsApp integration is activated with Vivi's verified number upon launch.
+              </div>
+            </div>
+
+            <div style="border-top: 1px solid var(--color-border-subtle); padding-top: 2rem;">
+              <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Studio Inquiries (Placeholder)</h4>
+              <p style="font-size: 0.92rem; color: var(--color-cream);">
+                Email: <span class="gold-accent">hello@veesdesign.com</span> <br>
+                Hours: Monday – Friday, 09:00 – 18:00 (EAT)
+              </p>
+            </div>
+          </div>
+
+          <!-- Enquiry Form (Validated) -->
+          <div style="background-color: var(--color-charcoal); padding: 3rem; border-radius: var(--radius-sm); border: 1px solid var(--color-border-subtle);">
+            <h3 style="font-size: 1.7rem; margin-bottom: 1.75rem;">Project Enquiry Form</h3>
+            
+            <form id="enquiry-form" data-mock="true" novalidate>
+              <!-- Name -->
+              <div class="form-group">
+                <label for="name" class="form-label">Client Name <span>*</span></label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Your name or business name" required>
+              </div>
+
+              <!-- Email -->
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address <span>*</span></label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="you@domain.com" required>
+              </div>
+
+              <!-- Optional WhatsApp -->
+              <div class="form-group">
+                <label for="whatsapp" class="form-label">WhatsApp Number <small style="text-transform: none; color:#888;">(Optional)</small></label>
+                <input type="tel" id="whatsapp" name="whatsapp" class="form-control" placeholder="+254 700 000000">
+              </div>
+
+              <!-- Service Required Selection -->
+              <div class="form-group">
+                <label for="service-select" class="form-label">Service Required <span>*</span></label>
+                <select id="service-select" name="service" class="form-control" required>
+                  <option value="" disabled selected>Select a design service...</option>
+                  <option value="Logo Concepts & Brand Identity">Logo Concepts & Brand Identity</option>
+                  <option value="Posters & Flyers">Posters & Flyers</option>
+                  <option value="Social Media Graphics">Social Media Graphics</option>
+                  <option value="Business Cards">Business Cards & Stationery</option>
+                  <option value="Menus & Promotional Materials">Menus & Promotional Materials</option>
+                  <option value="Custom Design Projects">Custom Design Project</option>
+                </select>
+              </div>
+
+              <!-- Project Description -->
+              <div class="form-group">
+                <label for="message" class="form-label">Project Description <span>*</span></label>
+                <textarea id="message" name="message" class="form-control" placeholder="Tell Vivi about your brand, goals, and any specific visual preferences..." required></textarea>
+              </div>
+
+              <!-- Preferred Deadline -->
+              <div class="form-group">
+                <label for="deadline" class="form-label">Preferred Completion Deadline</label>
+                <input type="text" id="deadline" name="deadline" class="form-control" placeholder="e.g. In 3 weeks, End of month, Flexible">
+              </div>
+
+              <!-- Feedback Banner -->
+              <div id="form-feedback" class="form-feedback" role="alert"></div>
+
+              <!-- Action Button -->
+              <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">
+                Send Enquiry
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- WhatsApp Floating Trigger -->
+  <a href="#" id="whatsapp-direct-btn" class="whatsapp-float" aria-label="Chat on WhatsApp with Vees Design">
+    <svg viewBox="0 0 24 24"><path d="M12.031 2C6.495 2 2 6.495 2 12.031c0 1.942.553 3.754 1.517 5.29L2 22l4.81-1.488c1.474.887 3.208 1.401 5.221 1.401 5.536 0 10.031-4.495 10.031-10.031 0-5.536-4.495-10.031-10.031-10.031zm0 18.23c-1.748 0-3.37-.532-4.717-1.448l-.338-.228-2.853.883.896-2.779-.22-.351A8.196 8.196 0 0 1 3.83 12.03c0-4.522 3.679-8.201 8.201-8.201 4.522 0 8.201 3.679 8.201 8.201 0 4.522-3.679 8.201-8.201 8.201zm4.502-6.147c-.247-.124-1.464-.722-1.691-.805-.227-.082-.392-.124-.557.124-.165.247-.64 0.805-.784.97-.144.165-.289.186-.536.062-.247-.124-1.044-.385-1.988-1.227-.736-.656-1.233-1.467-1.377-1.714-.144-.247-.015-.381.108-.504.111-.111.247-.289.371-.433.124-.144.165-.247.247-.412.082-.165.041-.309-.021-.433-.062-.124-.557-1.341-.763-1.836-.2-.485-.404-.419-.557-.427l-.475-.008c-.165 0-.433.062-.66.309-.227.247-.866.846-.866 2.063s.887 2.393 1.011 2.558c.124.165 1.743 2.662 4.223 3.733.59.255 1.05.408 1.41.522.593.188 1.133.162 1.56.098.477-.071 1.464-.598 1.67-1.176.206-.578.206-1.073.144-1.176-.062-.103-.227-.165-.474-.289z"/></svg>
+  </a>
+
+  <!-- Global Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h4>VEES DESIGN<span class="gold-accent">.</span></h4>
+          <p>An independent graphic design brand creatively led by Vivi. Delivering thoughtful visual identities and refined print collateral.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Vivi</a></li>
+            <li><a href="services.html">Design Services</a></li>
+            <li><a href="portfolio.html">Portfolio Works</a></li>
+            <li><a href="contact.html">Request a Quote</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Direct Contact</h5>
+          <ul class="footer-links">
+            <li><span style="color:#777;">Inquiries:</span> hello@veesdesign.com <small style="color:var(--color-gold);">(placeholder)</small></li>
+            <li><span style="color:#777;">Direct:</span> Available via Contact Form</li>
+            <li><span style="color:#777;">Location:</span> Nairobi, Kenya</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 VEES DESIGN. All rights reserved. Independent Creative Direction by Vivi.</div>
+        <div style="font-size: 0.75rem;">Tagline: <em>Creativity Made Visible.</em></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
